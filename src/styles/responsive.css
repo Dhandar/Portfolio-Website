@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+  .navbar__links { gap: .8rem; }
+  .navbar__links a:not(.btn) { font-size: .82rem; }
+  .navbar__logo { font-size: .95rem; }
+}
+@media (max-width: 960px) {
+  .navbar__toggle { display: inline-flex; }
+  .navbar__links { position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 1rem 1.25rem 1.5rem; background: rgba(20,21,27,.98); border-bottom: 1px solid var(--border); display: none; }
+  .navbar__links.is-open { display: flex; }
+  .navbar__links li { padding: .6rem 0; }
+  .navbar__links .btn { justify-content: center; }
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-block: 2.5rem 3rem; }
+  .about, .contact { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .section { padding-block: 3.5rem; }
+  .hero__actions .btn { flex: 1 1 100%; justify-content: center; }
+  .editor__code { font-size: .78rem; padding: 1rem; }
+  .project__links { flex-wrap: wrap; }
+  .timeline { padding-left: 2.25rem; } .timeline__dot { left: -2.25rem; }
+  .navbar__logo { font-size: .9rem; }
+}
